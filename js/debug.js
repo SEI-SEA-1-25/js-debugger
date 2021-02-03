@@ -10,9 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("Got", result2, "Expected 6");
 
   const z = { width: 5, height: 7 };
-  // let getWidthOutcome = z.width;
-  // console.log(getWidthOutcome.getWidth());
-  // console.log("z is ", z.width.getWidth(), "inches wide."); //expect "z is 5 inches wide"
+
+  console.log("z is ", z.width, "inches wide."); //expect "z is 5 inches wide"
 
   const name = "weston";
   const string = "${name} is cool as heck";
