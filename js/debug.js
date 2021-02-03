@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function(){
   let amount = 13;
   console.log("Got", amount + 13, "expected 26"); //should print out 26
 
-  amount = amount ^ 2
+  amount = Math.pow(amount, 2)
   console.log("Got", amount, "expected 169") //should print 169, since 169 is 13
 
   const num = "37";
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const array = ['hi', 'hello', 'sup']
   
   // this should log the words from the array
-  for (let str in array) {
+  for (let str of array) {
     console.log(str);
   }
 
