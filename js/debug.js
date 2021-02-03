@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function(){
   console.log("Let's learn how to debug.");
 
@@ -13,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
   console.log("z is ", z.width, "inches wide."); //expect "z is 5 inches wide"
 
   const name = 'weston'
-  const string = '${name} is cool as heck'
+  const string = `${name} is cool as heck`
   console.log(string); // expect "weston is cool as heck"
 
   const q = 100;
@@ -53,9 +55,13 @@ document.addEventListener('DOMContentLoaded', function(){
   const array = ['hi', 'hello', 'sup']
   
   // this should log the words from the array
-  for (let str in array) {
+  for (let str of array) {
     console.log(str);
   }
+  
+  var finishResult = document.getElementById("finish").innerText = "YOU'RE ALL DONE!!";
 
-  document.getElementById("finish").innerText = "YOU'RE ALL DONE!!";
+  console.log(finishResult);
 });
+
+
